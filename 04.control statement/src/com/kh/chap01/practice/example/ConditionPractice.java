@@ -323,14 +323,6 @@ public class ConditionPractice {
 		double attendanceScore = attendance / totalAttendance * 100 * 0.2;
 		double score = midtermExamScore + finalExamScore + homeworkScore + attendanceScore;
 		
-		if (attendance / totalAttendance < 0.7) {
-			System.out.printf("FAIL [출석 횟수 부족] (%d/20)\n", attendance);
-		} 
-
-		if (score < 70) {
-			System.out.printf("FAIL [점수 미달] (총점 %f)\n", score);
-		}
-		
 		if (score >= 70 && attendance / totalAttendance >= 0.7) {
 			System.out.println("===========결과==========");
 			System.out.printf("중간 고사 점수(20) : %.1f\n", midtermExamScore);
@@ -339,6 +331,14 @@ public class ConditionPractice {
 			System.out.printf("출석        점수(20) : %.1f\n", attendanceScore);
 			System.out.printf("총점 : %.1f\n", score);
 			System.out.println("PASS\n");
+		} else {
+			if (attendance / totalAttendance < 0.7) {
+				System.out.printf("FAIL [출석 횟수 부족] (%d/20)\n", attendance);
+			} 
+
+			if (score < 70) {
+				System.out.printf("FAIL [점수 미달] (총점 %f)\n", score);
+			}
 		}
 	}
 	
