@@ -1,4 +1,4 @@
-package com.kh.chap01.guide;
+package com.kh.chap01.practice.guide;
 
 import java.util.Scanner;
 
