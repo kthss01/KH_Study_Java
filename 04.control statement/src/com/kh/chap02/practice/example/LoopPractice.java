@@ -151,7 +151,10 @@ public class LoopPractice {
 			return;
 		}
 		
-		for (int i = num1; i <= num2; i++) {
+		int min = Math.min(num1, num2);
+		int max = Math.max(num1, num2);
+		
+		for (int i = min; i <= max; i++) {
 			System.out.print(i + " ");
 		}
 		System.out.println();
@@ -178,7 +181,10 @@ public class LoopPractice {
 				continue;
 			}
 			
-			for (int i = num1; i <= num2; i++) {
+			int min = Math.min(num1, num2);
+			int max = Math.max(num1, num2);
+			
+			for (int i = min; i <= max; i++) {
 				System.out.print(i + " ");
 			}
 			System.out.println();
@@ -318,27 +324,31 @@ public class LoopPractice {
 				continue;
 			}
 			
+			int result = 0;
+			
 			switch (op) {
 			case "+":
-				System.out.printf("%d %s %d = %d\n", num1, op, num2, num1 + num2);
+				result = num1 + num2;
 				break;
 			case "-":
-				System.out.printf("%d %s %d = %d\n", num1, op, num2, num1 - num2);
+				result = num1 - num2;
 				break;
 			case "*":
-				System.out.printf("%d %s %d = %d\n", num1, op, num2, num1 * num2);
+				result = num1 * num2;
 				break;
 			case "/":
-				System.out.printf("%d %s %d = %d\n", num1, op, num2, num1 / num2);
+				result = num1 / num2;
 				break;
 			case "%":
-				System.out.printf("%d %s %d = %d\n", num1, op, num2, num1 % num2);
+				result = num1 % num2;
 				break;
 			default:
 				System.out.println("없는 연산자입니다. 다시 입력해주세요.");
 				break;
 			}
 			
+			System.out.printf("%d %s %d = %d\n", num1, op, num2, result);
+			System.out.println();
 		}
 	}
 	
