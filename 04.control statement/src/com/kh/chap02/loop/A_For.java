@@ -227,4 +227,110 @@ public class A_For {
 			System.out.printf("%d * %d = %d\n", random, i, (random * i));
 		}
 	}
+	
+	// 중첩 for문
+	/*
+	 * for(초기식1; 조건식1; 증감식1) {
+	 * 		수행할 문장 1;
+	 * 	
+	 * 		for(초기식2; 조건식2; 증감식2){
+	 * 			수행할 문장 2;
+	 * 		}
+	 * 
+	 * 		수행할 문장 3;
+	 * }
+	 * 
+	 */
+	
+	public void method12() {
+		// 1부터 5까지 연이어서 출력디는 문장을 3 줄 출력
+		// 1 2 3 4 5
+		// 1 2 3 4 5
+		// 1 2 3 4 5
+		
+		for (int i = 1; i <= 3; i++) {
+			for (int j = 1; j <= 5; j++) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void method13() {
+		// 2단 부터 9단까지 출력
+		// 단 2 ~ 9까지 1씩 증가 --> 바깥 for문
+		// 곱해지는 수 매 단마다 1부터9까지 1씩 증가 --?
+		
+		// == 2단 ==
+		// 2 * 1 = 2
+		// 2 * 2 = 4
+		// ...
+		// 2 * 9 = 18
+		
+		// == 3단 ==
+		// 3 * 1 = 3
+		// 3 * 2 = 6
+		// ...
+		// 3 * 9 = 27
+		 
+		for (int dan = 2; dan <= 9; dan++) {
+			System.out.println("== " + dan + " 단 ==");
+			for (int su = 1; su <= 9; su++) {
+				System.out.println(dan + " * " + su + " = " + dan * su);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void method14() {
+		// *****
+		// *****
+		// *****
+		// *****
+		
+		// 행이 1~4까지 반복 (4번) --> 바깥 for문
+		// 열이 1~5까지 반복 (5번) --> 안쪽 for문
+		
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print("*");
+//				System.out.print("* " + j);
+			}
+			System.out.println();
+//			System.out.println("i --> " + i);
+		}
+	}
+	
+	public void method15() {
+		// 1***
+		// *2**
+		// **3*
+		// ***4
+		
+		for (int i = 1; i <= 4; i++) {
+			for (int j = 1; j <= 4; j++) {
+				if (i == j) {
+					System.out.print(i);
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+	}
+	
+	public void method16() {
+		// *
+		// **
+		// ***
+		// ****
+		// *****
+		
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
 }
