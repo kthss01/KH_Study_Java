@@ -105,7 +105,7 @@ public class C_ArraySort {
 		
 		// 오름차순 정렬
 		// 1. 비교 주체를 정하는 for문
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length - 1; i++) {
 			// 2. 비교 대상을 정하는 for문
 			for (int j = i + 1; j < arr.length; j++) {
 				

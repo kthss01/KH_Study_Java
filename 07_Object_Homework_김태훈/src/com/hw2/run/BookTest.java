@@ -37,10 +37,10 @@ public class BookTest {
 		// 할인된 가격 = 가격 - (가격 * 할인율)
 		System.out.printf("도서명 = %s\n", b1.getTitle());
 		int discountPrice = b1.getPrice() - (int) (b1.getPrice() * b1.getDiscountRate());
-		System.out.printf("할인된 가격 = %d\n", discountPrice);
+		System.out.printf("할인된 가격 = %d원\n", discountPrice);
 		
 		System.out.printf("도서명 = %s\n", b2.getTitle());
 		discountPrice = b2.getPrice() - (int) (b2.getPrice() * b2.getDiscountRate());
-		System.out.printf("할인된 가격 = %d\n", discountPrice);
+		System.out.printf("할인된 가격 = %d원\n", discountPrice);
 	}
 }
