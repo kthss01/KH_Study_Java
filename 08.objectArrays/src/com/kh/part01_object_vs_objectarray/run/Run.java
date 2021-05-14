@@ -13,7 +13,7 @@ public class Run {
 
 		Scanner sc = new Scanner(System.in);
 
-		for (int i = 0; i < args.length; i++) {
+		for (int i = 0; i < 3; i++) {
 			System.out.println(i + 1 + "번째 도서 정보 입력");
 
 			System.out.println("제목 : ");
