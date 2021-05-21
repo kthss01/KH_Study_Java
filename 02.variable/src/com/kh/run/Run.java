@@ -27,7 +27,7 @@ public class Run {
 		D_Cast d = new D_Cast();
 //		d.rule1();
 //		d.rule2();
-//		d.stringTest();
+		d.stringTest();
 		
 		E_Printf e = new E_Printf();
 //		e.printfMethod();
@@ -35,7 +35,7 @@ public class Run {
 		F_KeyboardInput f = new F_KeyboardInput();
 //		f.inputScanner1();
 //		f.inputScanner2();
-		f.inputScanner3();
+//		f.inputScanner3();
 	}
 
 }
