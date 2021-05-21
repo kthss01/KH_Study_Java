@@ -113,7 +113,7 @@ public class C_ArraySort {
 //				System.out.println("j : " + j + " ----> " + arr[j]);
 				
 				
-				if (arr[i] > arr[j]) {
+				if (arr[i] < arr[j]) {
 					System.out.println("=== 교환 발생 ===");
 					
 					int temp = arr[i];

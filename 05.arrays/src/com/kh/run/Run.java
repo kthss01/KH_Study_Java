@@ -28,10 +28,10 @@ public class Run {
 		C_ArraySort c = new C_ArraySort();
 //		c.method1();
 //		c.method2();
-//		c.method3();
+		c.method3();
 //		c.method4();
 //		c.method5();
-		c.method6();
+//		c.method6();
 		
 		D_Overlap d = new D_Overlap();
 //		d.method1();

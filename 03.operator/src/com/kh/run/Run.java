@@ -17,8 +17,8 @@ public class Run {
 		B_InDecrease b = new B_InDecrease();
 //		b.method1();
 //		b.method2();
-//		b.method3();
-//		b.method4();
+		b.method3();
+		b.method4();
 		
 		C_Arithmetic c = new C_Arithmetic();
 //		c.method1();
