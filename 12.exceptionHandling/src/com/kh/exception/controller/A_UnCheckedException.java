@@ -112,7 +112,7 @@ public class A_UnCheckedException {
 			// NullPointerException
 			
 			String str1 = null;
-			int lenght = str1.length();
+			int length = str1.length();
 //		} catch (ClassCastException e) {
 //			System.out.println("잘못형변환 했네 ~ 다형성 복습 ");
 //		} catch (ArrayIndexOutOfBoundsException e) {
