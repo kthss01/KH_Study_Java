@@ -1,6 +1,7 @@
 package com.kh.chap02_layout.view;
 
 import java.awt.BorderLayout;
+import java.awt.EventQueue;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -15,6 +16,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+import com.kh.chap01_container.view.MakeJFrame1;
 
 public class GuiTest extends JFrame {
 
@@ -69,20 +72,32 @@ public class GuiTest extends JFrame {
 			public void keyPressed(KeyEvent e) {
 				System.out.print(e.getKeyChar() + " ");
 			}
-			
+
 		});
 
 		pw.addKeyListener(new KeyAdapter() {
-			
+
 			@Override
 			public void keyPressed(KeyEvent e) {
 				System.out.print(e.getKeyChar() + " ");
 			}
-			
+
 		});
-		
+
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					GuiTest frame = new GuiTest();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
 }
